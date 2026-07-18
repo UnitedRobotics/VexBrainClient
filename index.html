@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>VEX IQ Serial Bridge</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://unpkg.com/peerjs@1.5.2/dist/peerjs.min.js"></script>
+</head>
+
+<body>
+
+<h1>VEX IQ Peer Bridge</h1>
+
+<button id="serialBtn">
+Connect Serial
+</button>
+
+<hr>
+
+<button id="hostBtn">
+Host
+</button>
+
+<button id="clientBtn">
+Client
+</button>
+
+<div id="hostPanel" hidden>
+
+<h3>Your Peer ID</h3>
+
+<div id="peerID"></div>
+
+</div>
+
+<div id="clientPanel" hidden>
+
+<input id="hostID" placeholder="Host ID">
+
+<button id="connectBtn">
+Connect
+</button>
+
+</div>
+
+<pre id="log"></pre>
+
+<script type="module" src="app.js"></script>
+
+</body>
+</html>
