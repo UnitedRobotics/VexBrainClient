@@ -107,6 +107,16 @@ Host VEX IQ Brain
 Client VEX IQ Brain
 ```
 
+## USB Connection
+
+This project communicates with the VEX IQ Brain exclusively over a USB serial connection.
+
+Bluetooth is **not used** and is **not required**.
+
+The application uses the browser's Web Serial API to access a USB serial device after the user grants permission.
+
+The serial device must appear as a COM port (Windows), `/dev/tty*` (Linux), or `/dev/cu.*` (macOS).
+
 ## Limitations
 
 * Web Serial requires user permission each time a serial device is selected.
